@@ -1,4 +1,11 @@
-from src.utils import get_vacancies_from_api, filter_vacancies, filter_vacancies_by_salary, sort_vacancies, get_top_vacancies, print_vacancies
+from src.utils import (
+    get_vacancies_from_api,
+    filter_vacancies,
+    filter_vacancies_by_salary,
+    sort_vacancies,
+    get_top_vacancies,
+    print_vacancies,
+)
 
 from src.json_saver import JSONSaver
 
@@ -25,3 +32,7 @@ def user_interaction():
     top_vacancies = get_top_vacancies(sorted_vacancies, top_n)
 
     print_vacancies(top_vacancies)
+
+
+if __name__ == "__main__":
+    user_interaction()
